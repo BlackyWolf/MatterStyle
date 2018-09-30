@@ -1,0 +1,37 @@
+.margins(@counter) when (@counter > -1) {
+    .margins(@counter - 1);
+
+    @margin: @counter * 4px;
+
+    .m-@{counter} {
+        margin: @margin;
+    }
+
+    .my-@{counter} {
+        margin-bottom: @margin;
+        margin-top: @margin;
+    }
+
+    .mx-@{counter} {
+        margin-left: @margin;
+        margin-right: @margin;
+    }
+
+    .mb-@{counter} {
+        margin-bottom: @margin;
+    }
+
+    .ml-@{counter} {
+        margin-left: @margin;
+    }
+
+    .mr-@{counter} {
+        margin-right: @margin;
+    }
+
+    .mt-@{counter} {
+        margin-top: @margin;
+    }
+}
+
+.margins(4);

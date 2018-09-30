@@ -1,0 +1,33 @@
+{
+    "name": "matter-style",
+    "version": "1.0.0",
+    "description": "A material design implementation.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BlackyWolf/MatterStyle.git"
+    },
+    "keywords": [
+        "material",
+        "design",
+        "matter",
+        "style",
+        "css",
+        "framework"
+    ],
+    "author": {
+        "name": "BlackyWolf",
+        "url": "https://www.blackywolf.me"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/BlackyWolf/MatterStyle/issues"
+    },
+    "homepage": "https://github.com/BlackyWolf/MatterStyle#readme",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "less": "^3.8.1"
+    }
+}

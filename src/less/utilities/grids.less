@@ -1,0 +1,15 @@
+.grids(@counter) when (@counter > 0) {
+    .grids(@counter - 1);
+
+    .grid-@{counter} {
+        display: grid;
+        grid-template-columns: repeat(@counter, 1fr);
+        grid-gap: 8px;
+    }
+
+    .inline.grid-@{counter} {
+        display: inline-grid;
+    }
+}
+
+.grids(8);

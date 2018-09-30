@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Document</title>
+
+        <link rel="stylesheet/less" href="src/less/global.less">
+        <link rel="stylesheet/less" href="./styles.less">
+
+        <style>
+            .e1,
+            .e2 {
+                height: 100px;
+                width: 100px;
+            }
+        </style>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
+    </head>
+    <body>
+        <div class="grid-4">
+            <section class="surface e1"></section>
+            <section class="surface shadow depth-1 e1"></section>
+            <section class="surface rounded-4 e1"></section>
+            <section class="surface rounded-4 shadow depth-1 e1"></section>
+            <section class="surface rounded-8 shadow depth-1 e1"></section>
+            <section class="surface rounded-8 shadow depth-2 e1"></section>
+            <section class="surface rounded-8 shadow depth-3 e1"></section>
+            <section class="surface rounded-8 shadow depth-4 e1"></section>
+            <section class="surface rounded-full shadow depth-1 e1"></section>
+        </div>
+        <div class="grid-3">
+            <section class="surface rounded-8 shadow depth-1 e2"></section>
+            <section class="surface rounded-8 shadow depth-1 e2"></section>
+            <section class="surface rounded-8 shadow depth-1 e2"></section>
+        </div>
+    </body>
+</html>
