@@ -1,6 +1,6 @@
 {
     "name": "matter-style",
-    "version": "1.0.0",
+    "version": "0.0.3",
     "description": "A material design implementation.",
     "main": "index.js",
     "repository": {
@@ -25,9 +25,15 @@
     },
     "homepage": "https://github.com/BlackyWolf/MatterStyle#readme",
     "scripts": {
+        "build": "npm run build:less",
+        "build:less": "lessc src/less/global.less dist/matter-style.css",
+        "minify:less": "minify dist/matter-style.css > dist/matter-style.min.css",
+        "minify": "npm run minify:less",
+        "package": "npm run build && npm run minify",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
-        "less": "^3.8.1"
+        "less": "^3.8.1",
+        "minify": "^3.0.5"
     }
 }
